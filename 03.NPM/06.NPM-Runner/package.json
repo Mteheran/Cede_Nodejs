@@ -1,0 +1,14 @@
+{
+  "name": "06.NPM-Runner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prego": "node helloPeple.js",
+    "go": "node helloWorld.js",
+    "postgo": "node bye.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,19 @@
+const { createServer } = require('http');
+const { parseInt } = Number;
+
+const application = require('../server/app');
+
+const HOST = process.env.HOST ? process.env.HOST : '0.0.0.0';
+
+const normalizedPort = parseInt(process.env.PORT);
+const PORT = normalizedPort ? normalizedPort : 3001;
+
+process.on('uncaughtException', (err) => {
+    process.stdout.write(`Unhandled exception ${err.message}`);
+});
+
+const server = createServer(application);
+
+server.listen(PORT, HOST, () => {
+    process.stdout.write(`Server started on ${HOST}:${PORT}`);
+});

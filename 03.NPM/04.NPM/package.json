@@ -1,0 +1,17 @@
+{
+  "name": "my-first-package",
+  "version": "0.0.1",
+  "description": "This is my first npm package",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "helloWorld",
+    "first",
+    "programm",
+    "helloNode"
+  ],
+  "author": "Nick Lototskiy",
+  "license": "MIT"
+}
